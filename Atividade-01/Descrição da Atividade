@@ -1,0 +1,11 @@
+DICA PARA FUNÇÃO IMPRIMIR:
+void imprime(No *n){
+           
+       } 
+
+obs : sequencia <raiz> <filho esquerda> <filho da direita> , de forma recursiva, usar os sinais < (menor) e >(maior) pra indicar os filhos . Ex:
+
+<A<B><C>> -> SIGNIFICA QUE A TEM OS FILHOS B E C 
+CONFERIR NOS SLIDES OS DETALHES 
+
+DICA PARA FUNÇÃO PERCURSO EM LARGURA: A sequencia dos nós é apresentada por níveis da árvore, da esquerda para a direita .
