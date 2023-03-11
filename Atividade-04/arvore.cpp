@@ -92,3 +92,26 @@ bool Arvore::temItem(arvore* noRaiz, TipoItem item){
     }
 }
 
+int Arvore::totalDeNos(arvore* noRaiz){
+    if(noRaiz == NULL){
+        return 0;
+    }else{
+        int nos = totalDeNos(noRaiz->esquerda) + 1;
+        nos += totalDeNos(noRaiz->direita);
+        return nos;
+    }
+}
+
+bool Arvore::ehEstritamenteBinaria(arvore* noRaiz){
+    if(noRaiz == NULL){
+        return true;
+    }
+    if(noRaiz->esquerda == NULL && noRaiz->direita == NULL){
+        return true;
+    }if(noRaiz->esquerda != NULL  && noRaiz->direita != NULL){
+        return ehEstritamenteBinaria(noRaiz->esquerda) && ehEstritamenteBinaria(noRaiz->direita);
+    }
+    
+    return false;
+    
+}

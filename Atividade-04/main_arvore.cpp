@@ -49,6 +49,12 @@ int main(){
 
     cout << "Tem o valor 2 na arvore? ";
     cout << arv1->temItem(noArvA1, 2);
+
+    cout << "Total de nós: ";
+    cout << arv1->totalDeNos(noArvA1) << endl;
+
+    cout << "A arvore eh estritamente binaria? ";
+    cout << std::boolalpha << arv1->ehEstritamenteBinaria(noArvA1) << endl;
     
     return 0;
 }
