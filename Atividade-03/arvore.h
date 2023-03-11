@@ -22,4 +22,5 @@ class Arvore{
         void imprimirEmNivel(arvore* noRaiz);
         int totalDeFolhas(arvore* noRaiz);
         bool temItem(arvore* noRaiz, TipoItem item);
+        int totalDeNos(arvore* noRaiz);
 };

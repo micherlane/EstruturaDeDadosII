@@ -48,7 +48,11 @@ int main(){
     cout << endl;
 
     cout << "Tem o valor 2 na arvore? ";
-    cout << arv1->temItem(noArvA1, 2);
+    cout << arv1->temItem(noArvA1, 2) << endl;
+
+
+    cout << "Total de nós: ";
+    cout << arv1->totalDeNos(noArvA1) << endl;
     
     return 0;
 }
