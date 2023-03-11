@@ -8,7 +8,8 @@ int main(){
     Arvore* arv = new Arvore();
     Arvore* arv1 = new Arvore();
     
-    arvore* noArvF1 = arv->adicionarNo( NULL, 3, NULL);
+    arvore* noArvH1 = arv->adicionarNo( NULL, 3, NULL);
+    arvore* noArvF1 = arv->adicionarNo( NULL, 3, noArvH1);
     arvore* noArvE1 = arv->adicionarNo( NULL, 6, NULL);
     arvore* noArvD1 = arv->adicionarNo( NULL, 2, noArvF1);
     arvore* noArvC1 = arv->adicionarNo( NULL, 5, noArvE1);
@@ -48,7 +49,7 @@ int main(){
     cout << endl;
 
     cout << "Tem o valor 2 na arvore? ";
-    cout << arv1->temItem(noArvA1, 2);
+    cout << arv1->temItem(noArvA1, 2) << endl;
 
     cout << "Total de nós: ";
     cout << arv1->totalDeNos(noArvA1) << endl;
